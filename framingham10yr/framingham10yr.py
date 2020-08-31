@@ -485,9 +485,9 @@ if __name__ == "__main__":
         blood_pressure_med_treatment=sys.argv[7].lower()
         
     except(IndexError):
-        print "All values are required."
-        print "Usage: framingham.py <sex> <age> <total_cholesterol> <hdl_cholesterol systolic_blood_pressure> <smoker> <blood_pressure_med_treatment>"
-        print "Example: framingham.py male 25 152 56 130 0 0"
+        print("All values are required.")
+        print("Usage: framingham.py <sex> <age> <total_cholesterol> <hdl_cholesterol systolic_blood_pressure> <smoker> <blood_pressure_med_treatment>")
+        print("Example: framingham.py male 25 152 56 130 0 0")
         exit(1)
         
     try:
@@ -498,9 +498,9 @@ if __name__ == "__main__":
                                        smoker, blood_pressure_med_treatment)
         
         #return pretty-print json to standard out
-        print json.dumps(result, indent=4)
+        print(json.dumps(result, indent=4))
           
     except():
-        print "An unexpected error occured. Here is the post-mortem:"
-        print sys.exc_info()
+        print("An unexpected error occured. Here is the post-mortem:")
+        print(sys.exc_info())
         
